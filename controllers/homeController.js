@@ -115,7 +115,7 @@ exports.deleteIOTDevice = async (req, res) => {
         timestamp: new Date(),
       });
     }
-    await device.remove();
+    await device.deleteOne();
     try {
       require("../utils/socket")
         .getIO()
@@ -269,7 +269,7 @@ exports.deleteDevice = async (req, res) => {
         timestamp: new Date(),
       });
     }
-    await device.remove();
+    await device.deleteOne();
     try {
       require("../utils/socket")
         .getIO()

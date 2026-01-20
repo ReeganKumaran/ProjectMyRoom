@@ -11,6 +11,20 @@ module.exports = {
         methods: ["GET", "POST"],
       },
     });
+
+    io.use((socket, next) => {
+      const token = socket.handshake.query.token;
+
+      if (token === "esp-secret-123") {
+        // allow ESP
+        return next();
+      }
+
+      // normal JWT verification for web users...
+      // TODO: Implement actual JWT verification here
+      // For now, we allow connection to proceed (or you can throw error if strict)
+      next();
+    });
     return io;
   },
   getIO: () => {
