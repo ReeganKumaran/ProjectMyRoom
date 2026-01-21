@@ -30,3 +30,5 @@
 {"level":"error","message":"API Auth Middleware Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:56:49.353Z"}
 {"level":"error","message":"API Auth Middleware Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:56:49.362Z"}
 {"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:56:49.366Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T15:12:14.949Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T15:12:15.057Z"}

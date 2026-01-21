@@ -1952,3 +1952,6 @@
 {"level":"info","message":"192.168.137.1 - - [21/Jan/2026:15:06:14 +0000] \"GET /api/listDevice?deviceId=Device-1&password=Reegan%4012345 HTTP/1.1\" 200 420 \"http://192.168.137.170:5173/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0\"","timestamp":"2026-01-21T15:06:14.111Z"}
 {"level":"info","message":"Client disconnected from WebSocket","timestamp":"2026-01-21T15:10:58.325Z"}
 {"level":"info","message":"Client connected to WebSocket","timestamp":"2026-01-21T15:11:00.971Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T15:12:14.949Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T15:12:15.057Z"}
+{"level":"info","message":"Client connected to WebSocket","timestamp":"2026-01-21T15:12:51.004Z"}
