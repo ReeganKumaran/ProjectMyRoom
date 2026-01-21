@@ -1,1 +1,32 @@
 {"level":"error","message":"Error adding IOT Device: next is not a function","timestamp":"2026-01-19T20:09:15.975Z"}
+{"level":"error","message":"Error adding IOT Device: next is not a function","timestamp":"2026-01-21T12:16:02.758Z"}
+{"level":"error","message":"Error adding IOT Device: next is not a function","timestamp":"2026-01-21T12:16:16.998Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:32:31.821Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:36:15.219Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:41:21.726Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:41:31.026Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:43:53.739Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:43:55.159Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:44:43.996Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:44:50.980Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:44:52.362Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:45:56.980Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:45:58.279Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:49:30.026Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:49:40.402Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:50:05.373Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:50:07.075Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:50:08.967Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:50:11.571Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:50:24.160Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:51:43.383Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:51:55.003Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:51:57.834Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:54:08.906Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:55:02.484Z"}
+{"level":"error","message":"Socket connection rejected: No credentials provided from 192.168.137.1","timestamp":"2026-01-21T12:55:10.517Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:56:49.030Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:56:49.292Z"}
+{"level":"error","message":"API Auth Middleware Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:56:49.353Z"}
+{"level":"error","message":"API Auth Middleware Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:56:49.362Z"}
+{"level":"error","message":"Socket Auth Error: Operation `myiotdevices.findOne()` buffering timed out after 10000ms","timestamp":"2026-01-21T12:56:49.366Z"}

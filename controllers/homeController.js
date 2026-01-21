@@ -1,5 +1,6 @@
 const MyRoomDevice = require("../models/MyRoomDevice");
 const MyIOTDevice = require("../models/MyIOTDevice");
+const bcrypt = require("bcrypt");
 
 exports.getHome = (req, res) => {
   res.json({
@@ -37,12 +38,35 @@ exports.listIOTDevice = async (req, res) => {
 
 exports.addIOTDevice = async (req, res) => {
   try {
-    const { deviceName, deviceLocation, deviceStatus } = req.body;
-    const device = new MyIOTDevice({
+    const {
       deviceName,
       deviceLocation,
       deviceStatus,
+      devicePassword,
+      deviceType,
+    } = req.body;
+    if (
+      !deviceName ||
+      !deviceLocation ||
+      !deviceStatus ||
+      !devicePassword ||
+      !deviceType
+    ) {
+      return res.json({
+        message: "Missing required fields",
+        status: "error",
+        timestamp: new Date(),
+      });
+    }
+
+    const device = new MyIOTDevice({
+      deviceName,
+      devicePassword, // Password hashing is handled by pre-save hook in model
+      deviceLocation,
+      deviceStatus,
+      deviceType,
     });
+
     await device.save();
     try {
       require("../utils/socket")
@@ -70,7 +94,13 @@ exports.addIOTDevice = async (req, res) => {
 
 exports.editIOTDevice = async (req, res) => {
   try {
-    const { deviceID, deviceName, deviceLocation, deviceStatus } = req.body;
+    const {
+      deviceID,
+      deviceName,
+      deviceLocation,
+      deviceStatus,
+      devicePassword,
+    } = req.body;
     const device = await MyIOTDevice.findOne({ deviceID });
     if (!device) {
       return res.json({
@@ -80,6 +110,7 @@ exports.editIOTDevice = async (req, res) => {
       });
     }
     device.deviceName = deviceName;
+    device.devicePassword = devicePassword;
     device.deviceLocation = deviceLocation;
     device.deviceStatus = deviceStatus;
     await device.save();

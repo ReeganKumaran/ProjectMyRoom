@@ -5,6 +5,15 @@ const MyIOTDeviceSchema = new mongoose.Schema({
     type: String,
     unique: true,
   },
+  deviceType: {
+    type: String,
+    enum: ["Admin", "Controller"],
+    default: "Controller",
+  },
+  devicePassword: {
+    type: String,
+    required: true,
+  },
   deviceName: {
     type: String,
     required: true,
@@ -27,4 +36,18 @@ MyIOTDeviceSchema.pre("validate", async function () {
     }
   }
 });
+
+MyIOTDeviceSchema.pre("save", async function () {
+  if (!this.isModified("devicePassword")) {
+    return;
+  }
+  try {
+    const bcrypt = require("bcrypt");
+    const salt = await bcrypt.genSalt(10);
+    this.devicePassword = await bcrypt.hash(this.devicePassword, salt);
+  } catch (err) {
+    throw err;
+  }
+});
+
 module.exports = mongoose.model("MyIOTDevice", MyIOTDeviceSchema);
