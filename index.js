@@ -24,7 +24,7 @@ io.on("connection", (socket) => {
 });
 
 // Middleware
-app.use(cors());
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 // Use morgan for HTTP request logging, piping to winston
